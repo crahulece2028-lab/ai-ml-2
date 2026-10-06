@@ -1,0 +1,11 @@
+{
+  "dataset": "CIFAR-10",
+  "setting": "no augmentation (control)",
+  "augment": false,
+  "epochs": 20,
+  "best_val_accuracy": 0.7889,
+  "best_epoch": 17,
+  "final_val_accuracy": 0.7883,
+  "test_accuracy": 0.7684,
+  "seconds_per_epoch_median": 219.8
+}

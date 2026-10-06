@@ -1,0 +1,11 @@
+class,accuracy,support,most_confused_with
+dog,0.606,1000,cat
+cat,0.649,1000,frog
+horse,0.653,1000,deer
+bird,0.656,1000,frog
+deer,0.743,1000,frog
+airplane,0.803,1000,ship
+automobile,0.862,1000,truck
+truck,0.883,1000,automobile
+ship,0.912,1000,airplane
+frog,0.917,1000,cat

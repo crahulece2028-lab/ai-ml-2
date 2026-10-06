@@ -1,0 +1,31 @@
+{
+  "dataset": "CIFAR-10",
+  "tf_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "trainable_params": 120810,
+  "count_params_including_bn_buffers": 121578,
+  "optimizer": "SGD(momentum=0.9, nesterov=True), lr 0.05 cosine decay",
+  "label_smoothing": 0.1,
+  "batch_size": 128,
+  "epochs_completed": 20,
+  "seed": 42,
+  "best_val_accuracy": 0.6773,
+  "best_epoch": 18,
+  "final_val_accuracy": 0.6641,
+  "test_accuracy": 0.6591,
+  "seconds_per_epoch": 549.6,
+  "seconds_per_epoch_median": 209.8,
+  "train_minutes": 183.2,
+  "worst_class": {
+    "class": "cat",
+    "accuracy": 0.305,
+    "support": 1000,
+    "most_confused_with": "frog"
+  },
+  "best_class": {
+    "class": "frog",
+    "accuracy": 0.961,
+    "support": 1000,
+    "most_confused_with": "cat"
+  }
+}

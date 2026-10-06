@@ -1,0 +1,34 @@
+{
+  "framework": "tensorflow-keras",
+  "tf_version": "2.21.0",
+  "keras_version": "3.15.1",
+  "parameters": 421738,
+  "keras_trainable_params": 421738,
+  "keras_count_params_including_bn_buffers": 421930,
+  "pytorch_parameters": 421738,
+  "architectures_identical": true,
+  "optimizer": "Adam(lr=0.001)",
+  "epochs": 8,
+  "batch_size": 64,
+  "seed": 42,
+  "best_val_accuracy": 0.9213333129882812,
+  "best_epoch": 8,
+  "test_accuracy": 0.914,
+  "test_loss": 0.2462703138589859,
+  "pytorch_test_accuracy": 0.9067,
+  "same_recipe_best_val_gap_points": 0.2666652202606201,
+  "run_a_minutes": null,
+  "worst_class": {
+    "class": "Shirt",
+    "accuracy": 0.727,
+    "support": 1000,
+    "most_confused_with": "T-shirt/top"
+  },
+  "best_class": {
+    "class": "Bag",
+    "accuracy": 0.981,
+    "support": 1000,
+    "most_confused_with": "Dress"
+  },
+  "test_delta_points": 0.73
+}

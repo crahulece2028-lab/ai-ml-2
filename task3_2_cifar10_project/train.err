@@ -1,0 +1,33 @@
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\keras\src\trainers\epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Traceback (most recent call last):
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\pandas\core\indexes\base.py", line 3641, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 168, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 197, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7668, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7676, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'epoch'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\OneDrive\ドキュメント\Default Project\week3\task3_2_cifar10_project\train_cifar10.py", line 469, in <module>
+    main()
+  File "D:\OneDrive\ドキュメント\Default Project\week3\task3_2_cifar10_project\train_cifar10.py", line 443, in main
+    "best_epoch": int(df.loc[df["val_accuracy"].idxmax(), "epoch"]),
+                      ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\pandas\core\indexing.py", line 1199, in __getitem__
+    return self.obj._get_value(*key, takeable=self._takeable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\pandas\core\frame.py", line 4489, in _get_value
+    series = self._get_item(col)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\pandas\core\frame.py", line 4969, in _get_item
+    loc = self.columns.get_loc(item)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\pandas\core\indexes\base.py", line 3648, in get_loc
+    raise KeyError(key) from err
+KeyError: 'epoch'

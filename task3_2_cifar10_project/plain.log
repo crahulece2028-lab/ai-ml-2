@@ -1,0 +1,71 @@
+tensorflow 2.21.0 | keras 3.15.1 | seed 42
+devices: ['CPU']
+train (45000, 32, 32, 3) | val (5000, 32, 32, 3) | test (10000, 32, 32, 3) (sealed until final evaluation)
+
+=== plain control (no augmentation) === 20 epochs, 352 steps/epoch, augment=False
+Epoch 1/20
+352/352 - 240s - 683ms/step - accuracy: 0.3857 - loss: 1.8150 - val_accuracy: 0.4215 - val_loss: 1.7403
+Epoch 2/20
+352/352 - 235s - 668ms/step - accuracy: 0.5182 - loss: 1.5529 - val_accuracy: 0.5027 - val_loss: 1.5935
+Epoch 3/20
+352/352 - 234s - 666ms/step - accuracy: 0.5804 - loss: 1.4394 - val_accuracy: 0.5246 - val_loss: 1.5587
+Epoch 4/20
+352/352 - 210s - 597ms/step - accuracy: 0.6166 - loss: 1.3727 - val_accuracy: 0.5066 - val_loss: 1.6448
+Epoch 5/20
+352/352 - 237s - 672ms/step - accuracy: 0.6433 - loss: 1.3177 - val_accuracy: 0.6107 - val_loss: 1.3616
+Epoch 6/20
+352/352 - 210s - 597ms/step - accuracy: 0.6621 - loss: 1.2792 - val_accuracy: 0.6889 - val_loss: 1.2191
+Epoch 7/20
+352/352 - 206s - 586ms/step - accuracy: 0.6806 - loss: 1.2450 - val_accuracy: 0.6801 - val_loss: 1.2419
+Epoch 8/20
+352/352 - 210s - 597ms/step - accuracy: 0.6982 - loss: 1.2121 - val_accuracy: 0.7320 - val_loss: 1.1284
+Epoch 9/20
+352/352 - 214s - 607ms/step - accuracy: 0.7098 - loss: 1.1890 - val_accuracy: 0.7254 - val_loss: 1.1369
+Epoch 10/20
+352/352 - 211s - 598ms/step - accuracy: 0.7210 - loss: 1.1635 - val_accuracy: 0.7074 - val_loss: 1.1731
+Epoch 11/20
+352/352 - 206s - 585ms/step - accuracy: 0.7277 - loss: 1.1499 - val_accuracy: 0.7518 - val_loss: 1.0846
+Epoch 12/20
+352/352 - 213s - 604ms/step - accuracy: 0.7413 - loss: 1.1274 - val_accuracy: 0.7426 - val_loss: 1.1073
+Epoch 13/20
+352/352 - 207s - 587ms/step - accuracy: 0.7478 - loss: 1.1124 - val_accuracy: 0.7637 - val_loss: 1.0669
+Epoch 14/20
+352/352 - 231s - 655ms/step - accuracy: 0.7540 - loss: 1.0996 - val_accuracy: 0.7703 - val_loss: 1.0496
+Epoch 15/20
+352/352 - 220s - 624ms/step - accuracy: 0.7609 - loss: 1.0875 - val_accuracy: 0.7619 - val_loss: 1.0574
+Epoch 16/20
+352/352 - 221s - 627ms/step - accuracy: 0.7644 - loss: 1.0766 - val_accuracy: 0.7812 - val_loss: 1.0196
+Epoch 17/20
+352/352 - 912s - 3s/step - accuracy: 0.7696 - loss: 1.0687 - val_accuracy: 0.7889 - val_loss: 1.0181
+Epoch 18/20
+352/352 - 307s - 873ms/step - accuracy: 0.7731 - loss: 1.0616 - val_accuracy: 0.7850 - val_loss: 1.0156
+Epoch 19/20
+352/352 - 306s - 870ms/step - accuracy: 0.7765 - loss: 1.0543 - val_accuracy: 0.7879 - val_loss: 1.0075
+Epoch 20/20
+352/352 - 289s - 821ms/step - accuracy: 0.7752 - loss: 1.0561 - val_accuracy: 0.7883 - val_loss: 1.0044
+plain control (no augmentation): 88.64 min | 265.4 s/epoch | best val 0.7889
+
+              precision    recall  f1-score   support
+
+    airplane     0.7950    0.8030    0.7990      1000
+  automobile     0.9410    0.8620    0.8998      1000
+        bird     0.6701    0.6560    0.6630      1000
+         cat     0.5922    0.6490    0.6193      1000
+        deer     0.7151    0.7430    0.7288      1000
+         dog     0.7509    0.6060    0.6707      1000
+        frog     0.6669    0.9170    0.7722      1000
+       horse     0.9491    0.6530    0.7737      1000
+        ship     0.8398    0.9120    0.8744      1000
+       truck     0.8795    0.8830    0.8812      1000
+
+    accuracy                         0.7684     10000
+   macro avg     0.7800    0.7684    0.7682     10000
+weighted avg     0.7800    0.7684    0.7682     10000
+
+
+        setting  augment  epochs  best_val_acc  best_epoch  test_acc  seconds_per_epoch_median
+      augmented     True      20        0.6773          18    0.6591                     209.8
+no augmentation    False      20        0.7889          17    0.7684                     219.8
+
+augmentation effect at 20 epochs: -0.1116 best-val, -0.1093 test (-11.16 / -10.93 points)
+wrote task3_2_results_noaug.json and cifar10_augmentation_comparison_20ep.csv

@@ -1,0 +1,3 @@
+setting,augment,epochs,best_val_acc,best_epoch,test_acc,seconds_per_epoch_median
+augmented,True,20,0.6773,18,0.6591,209.8
+no augmentation,False,20,0.7889,17,0.7684,219.8

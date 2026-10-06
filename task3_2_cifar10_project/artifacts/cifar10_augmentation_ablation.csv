@@ -1,0 +1,3 @@
+setting,augment,epochs,final_val_acc,best_val_acc,minutes
+plain,False,3,0.575,0.575,68.63
+augmented,True,3,0.4971,0.4971,18.54

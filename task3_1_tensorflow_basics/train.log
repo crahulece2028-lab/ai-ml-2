@@ -1,0 +1,45 @@
+tensorflow 2.21.0 | keras 3.15.1 | seed 42
+devices: ['CPU']
+keras trainable params : 421,738
+keras count_params()   : 421,930  (includes 192 BatchNorm running buffers)
+pytorch params         : 421,738  (identical: True)
+
+=== run A (8 epochs) ===
+Epoch 1/8
+844/844 - 89s - 105ms/step - accuracy: 0.8435 - loss: 0.4371 - val_accuracy: 0.8733 - val_loss: 0.3374
+Epoch 2/8
+844/844 - 90s - 106ms/step - accuracy: 0.8886 - loss: 0.3021 - val_accuracy: 0.9037 - val_loss: 0.2704
+Epoch 3/8
+844/844 - 90s - 107ms/step - accuracy: 0.9018 - loss: 0.2631 - val_accuracy: 0.8985 - val_loss: 0.2823
+Epoch 4/8
+844/844 - 88s - 104ms/step - accuracy: 0.9134 - loss: 0.2355 - val_accuracy: 0.9122 - val_loss: 0.2472
+Epoch 5/8
+844/844 - 246s - 291ms/step - accuracy: 0.9184 - loss: 0.2195 - val_accuracy: 0.9188 - val_loss: 0.2307
+Epoch 6/8
+844/844 - 100s - 119ms/step - accuracy: 0.9231 - loss: 0.2034 - val_accuracy: 0.9210 - val_loss: 0.2193
+Epoch 7/8
+844/844 - 101s - 120ms/step - accuracy: 0.9299 - loss: 0.1856 - val_accuracy: 0.9082 - val_loss: 0.2579
+Epoch 8/8
+844/844 - 96s - 113ms/step - accuracy: 0.9345 - loss: 0.1734 - val_accuracy: 0.9213 - val_loss: 0.2220
+
+run A: 15.00 min | best val 0.9213 @ epoch 8 | saved model
+
+=== run B (identical recipe, noise estimate) ===
+Epoch 1/8
+844/844 - 98s - 117ms/step - accuracy: 0.8404 - loss: 0.4455 - val_accuracy: 0.8682 - val_loss: 0.3455
+Epoch 2/8
+844/844 - 86s - 101ms/step - accuracy: 0.8911 - loss: 0.3011 - val_accuracy: 0.8930 - val_loss: 0.2957
+Epoch 3/8
+844/844 - 89s - 105ms/step - accuracy: 0.9025 - loss: 0.2625 - val_accuracy: 0.9013 - val_loss: 0.2736
+Epoch 4/8
+844/844 - 87s - 103ms/step - accuracy: 0.9126 - loss: 0.2349 - val_accuracy: 0.9003 - val_loss: 0.2727
+Epoch 5/8
+844/844 - 97s - 114ms/step - accuracy: 0.9200 - loss: 0.2160 - val_accuracy: 0.9187 - val_loss: 0.2202
+Epoch 6/8
+844/844 - 143s - 169ms/step - accuracy: 0.9244 - loss: 0.2024 - val_accuracy: 0.9168 - val_loss: 0.2341
+Epoch 7/8
+844/844 - 101s - 119ms/step - accuracy: 0.9312 - loss: 0.1867 - val_accuracy: 0.9180 - val_loss: 0.2272
+Epoch 8/8
+844/844 - 100s - 119ms/step - accuracy: 0.9353 - loss: 0.1763 - val_accuracy: 0.9135 - val_loss: 0.2387
+
+run B: 13.35 min | best val 0.9187

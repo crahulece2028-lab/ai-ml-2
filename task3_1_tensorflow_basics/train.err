@@ -1,0 +1,10 @@
+WARNING:tensorflow:TensorFlow GPU support is not available on native Windows for TensorFlow >= 2.11. Even if CUDA/cuDNN are installed, GPU will not be used. Please use WSL2 or the TensorFlow-DirectML plugin.
+Traceback (most recent call last):
+  File "D:\OneDrive\ドキュメント\Default Project\week3\task3_1_tensorflow_basics\train_fmnist.py", line 283, in <module>
+    main()
+  File "D:\OneDrive\ドキュメント\Default Project\week3\task3_1_tensorflow_basics\train_fmnist.py", line 225, in main
+    test_loss = float(keras.losses.sparse_categorical_crossentropy(y_test, probs).mean())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\OneDrive\ドキュメント\Default Project\.venv-tf311\Lib\site-packages\tensorflow\python\framework\tensor.py", line 260, in __getattr__
+    self.__getattribute__(name)
+AttributeError: 'tensorflow.python.framework.ops.EagerTensor' object has no attribute 'mean'
